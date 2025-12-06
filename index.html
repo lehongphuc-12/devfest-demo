@@ -14,6 +14,27 @@
       body {
         font-family: 'Inter', sans-serif;
       }
+      @keyframes pulse-slow {
+        0%, 100% { transform: scale(1); opacity: 0.1; }
+        50% { transform: scale(1.1); opacity: 0.2; }
+      }
+      @keyframes pulse-medium {
+        0%, 100% { transform: scale(0.9); opacity: 0.15; }
+        50% { transform: scale(1.05); opacity: 0.25; }
+      }
+      @keyframes pulse-fast {
+        0%, 100% { transform: scale(1.0); opacity: 0.05; }
+        50% { transform: scale(1.2); opacity: 0.15; }
+      }
+      .animate-pulse-slow {
+        animation: pulse-slow 10s infinite ease-in-out;
+      }
+      .animate-pulse-medium {
+        animation: pulse-medium 8s infinite ease-in-out;
+      }
+      .animate-pulse-fast {
+        animation: pulse-fast 6s infinite ease-in-out;
+      }
     </style>
 <script type="importmap">
 {
